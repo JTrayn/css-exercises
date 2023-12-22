@@ -1,1 +1,28 @@
-/* Add CSS Styling */
+.avatar.proportioned {
+    width: 300px;
+    height: auto;
+
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+
+}
+
+/* This works because .normal is a child of .oldMan.
+    .oldMan.normal {} wouldn't work because the image isn't both
+    of these classes. It is just a .normal class with a parent class
+    of .oldMan. */
+.oldMan .normal {
+
+    width: 100px;
+    height: 300px;
+}
+
+/* Combining parent selectors and chaining selectors */
+.oldMan .weird.cool {
+
+    height: 50px;
+    width: 300px;
+}
